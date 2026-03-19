@@ -4,18 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node src/server.js",
-    "watch": "node --watch src/server.js"
+    "dev": "concurrently \"npx convex dev\" \"nodemon --exec tsx src/server.ts\"",
+    "deploy": "npx convex deploy",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "express": "^5.2.1"
+    "convex": "^1.33.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "multer": "^2.1.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
-    "@types/node": "^25.5.0"
+    "@types/multer": "^2.1.0",
+    "@types/node": "^25.5.0",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   }
 }
