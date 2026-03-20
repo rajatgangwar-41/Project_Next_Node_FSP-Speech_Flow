@@ -8,8 +8,9 @@
  * @module
  */
 
-import type * as transcriptions_createTranscription from "../transcriptions/createTranscription.js";
-import type * as transcriptions_getHistory from "../transcriptions/getHistory.js";
+import type * as http from "../http.js";
+import type * as private_transcriptions from "../private/transcriptions.js";
+import type * as private_users from "../private/users.js";
 
 import type {
   ApiFromModules,
@@ -18,8 +19,9 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
-  "transcriptions/createTranscription": typeof transcriptions_createTranscription;
-  "transcriptions/getHistory": typeof transcriptions_getHistory;
+  http: typeof http;
+  "private/transcriptions": typeof private_transcriptions;
+  "private/users": typeof private_users;
 }>;
 
 /**

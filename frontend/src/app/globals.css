@@ -135,22 +135,21 @@
     @apply font-sans;
   }
 }
-/* Subtle diagonal grid pattern – very light */
 .diagonal-grid-bg {
   min-height: 100vh;
-  background-color: rgb(235, 207, 207);
-  background-image:
-    linear-gradient(rgba(234, 88, 12, 0.25) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(234, 88, 12, 0.25) 1px, transparent 1px);
-  background-size: 28px 28px;
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(59, 130, 246, 0.15),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(56, 189, 248, 0.12),
+      transparent 40%
+    ),
+    linear-gradient(135deg, #f8fafc, #eef2ff);
 }
-
-/* .grid-bg {
-  background-image:
-    linear-gradient(to right, #e5e7eb15 1px, transparent 1px),
-    linear-gradient(to bottom, #e5e7eb15 1px, transparent 1px);
-  background-size: 32px 32px;
-} */
 
 @keyframes ping-slow {
   75%,
