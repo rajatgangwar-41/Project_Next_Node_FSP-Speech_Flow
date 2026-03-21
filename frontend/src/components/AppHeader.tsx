@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { UserButton, SignInButton, Show } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function AppHeader() {
   return (
@@ -11,7 +12,7 @@ export default function AppHeader() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group transition">
           <div className="h-9 w-9 rounded-xl bg-linear-to-br from-indigo-500 to-blue-500 shadow-md flex items-center justify-center text-white font-bold">
-            S
+            <Image src="/logo.png" height={40} width={40} alt="logo" />
           </div>
 
           <span className="font-semibold text-slate-900 text-lg tracking-tight group-hover:text-indigo-600 transition">
