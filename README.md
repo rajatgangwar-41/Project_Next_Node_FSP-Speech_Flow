@@ -1,4 +1,4 @@
-# 🎙️ Speech-to-Text Transcription App (MERN Stack)
+# 🎙️ Speech-to-Text Transcription App (CERN Stack)
 
 ## 📌 Project Overview
 
